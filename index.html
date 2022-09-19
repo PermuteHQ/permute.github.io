@@ -25,7 +25,6 @@
         <script>
             new WOW().init();
         </script>
-        <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
         <style>
             @font-face {
                 font-family: "Gilroy-Bold";
@@ -178,17 +177,18 @@
                             <h1
                                 class="mb-8 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug md:text-6xl md:leading-snug"
                             >
-                                <span class="block">
+                                <div>
                                     Supercharge
                                     <span
                                         class="typer"
-                                        id="rotating-text"
-                                        data-words="Sales,Ops,Telecaller,Employee"
+                                        id="hero-typer"
+                                        data-words="Employee,Sales,Ops,Telecaller,Employee"
                                         data-delay="50"
                                         data-loop="false"
                                         data-deleteDelay="1000"
-                                    ></span>
-                                </span>
+                                        data-startDelay="1000"
+                                    >Employee</span>
+                                </div>
                                 Productivity
                             </h1>
                             <p
@@ -2695,6 +2695,8 @@
         <!-- ====== All Scripts -->
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/typer.js"></script>
+
         <!-- <script>
             // ==== for menu scroll
             const pageLink = document.querySelectorAll(".ud-menu-scroll");
