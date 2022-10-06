@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="assets/images/logo/cube.png" type="image/x-icon" />
         <link rel="stylesheet" href="assets/css/animate.css" />
         <link rel="stylesheet" href="assets/css/tailwind.css" />
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-66XVKKY57R"></script>
         <script>
@@ -67,14 +67,7 @@
         <div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
             <div class="container">
                 <div class="relative -mx-4 flex items-center justify-between">
-                    <div class="w-80 max-w-full px-4">
-                        <!-- <a href="index.html" class="navbar-logo block w-full py-5">
-                <img
-                src="assets/images/logo/logo-white.svg"
-                alt="logo"
-                class="header-logo w-full"
-              />
-            </a> -->
+                    <div class="max-w-full px-4">
                         <a
                             class="toggleColour py-3 text-2xl tracking-wide text-gray-800 no-underline hover:no-underline lg:text-4xl"
                             href="."
@@ -84,8 +77,7 @@
                             permute
                         </a>
                     </div>
-                    <div class="flex w-full items-center justify-between px-4">
-                        <div>
+                    <div>
                             <button
                                 id="navbarToggler"
                                 class="ring-primary absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
@@ -153,7 +145,8 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-4">
                         <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
                             <a
                                 href="signup.html"
@@ -177,7 +170,7 @@
                             <h1
                                 class="mb-8 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug md:text-6xl md:leading-snug"
                             >
-                                <div>
+                                <span class="block">
                                     Supercharge
                                     <span
                                         class="typer"
@@ -188,7 +181,7 @@
                                         data-deleteDelay="1000"
                                         data-startDelay="1000"
                                     >Employee</span>
-                                </div>
+                                </span>
                                 Productivity
                             </h1>
                             <p
@@ -1557,7 +1550,7 @@
                                         Learn More
                                     </a>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center  hidden sm:block">
                                     <div class="relative z-10 inline-block">
                                         <img
                                             src="assets/images/about/about-image.svg"
@@ -1581,7 +1574,7 @@
                     <div class="-mx-4 flex flex-wrap">
                         <div class="w-full px-4">
                             <div class="items-center justify-between overflow-hidden border lg:flex">
-                                <div class="text-center">
+                                <div class="text-center hidden sm:block">
                                     <div class="relative z-10 inline-block">
                                         <img
                                             src="assets/images/about/about-image.svg"
@@ -1602,13 +1595,13 @@
                                         Unify all stakeholders
                                     </h2>
                                     <p class="mb-6 text-base leading-relaxed text-body-color">
-                                        Bring your employees & departments together by digitizing all the processes of
+                                        Bring your employees & departments together by digitizing the processes of
                                         your organization on a single unified platform instead of purchasing multiple
                                         disjointed tools
                                     </p>
                                     <p class="mb-6 text-base leading-relaxed text-body-color">
-                                        Be it Customer Acquisition, Partner Management, Operations, Lead Nurturing,
-                                        Servicing, Permute platform is capable to deliver them in a seamless interface.
+                                        Be it Customer Acquisition, Partner Management, Operations, Lead Nurturing or
+                                        Customer Servicing, Permute platform is capable to deliver them in a seamless interface.
                                     </p>
                                     <p class="mb-6 text-base leading-relaxed text-body-color">
                                         No more data silos, No more spreadsheet crunching
@@ -1629,7 +1622,7 @@
         <!-- ====== Desciption Section End -->
 
         <!-- ====== Faq Section Start -->
-        <section class="relative z-20 overflow-hidden bg-[#f3f4ff] pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <section class="relative z-20 overflow-hidden bg-primary-50 pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
             <div class="container">
                 <div class="-mx-4 flex flex-wrap">
                     <div class="w-full px-4">
@@ -1657,25 +1650,18 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        How to use TailGrids?
+                                        How does it work?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    Permute provides a collection of 200+ features which can be put together like a
+                                    jigsaw puzzle to create any solution for your internal teams' productivity.
                                 </p>
                             </div>
                         </div>
@@ -1688,25 +1674,18 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
+
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        How to download icons from LineIcons?
+                                        Do I need a Tech team?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    No, Permute team does all the heavylifting required to get the solutions designed, developed, deployed and maintained with utmost quality.
                                 </p>
                             </div>
                         </div>
@@ -1719,25 +1698,19 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
+
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        Is GrayGrids part of UIdeck?
+                                        Who owns my data and where is it stored?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    You own and control your data, always.
+                                    Permute offers dedicated and hybrid hosting models to allow keeping the data access in your control.
                                 </p>
                             </div>
                         </div>
@@ -1752,25 +1725,18 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
+
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        Can I use this template for commercial project?
+                                        Can I deploy Permute on-premises?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    Yes, Permute can be deployed on-premises, as well as on your existing cloud provider (AWS, Azure, GCP) or even a private cloud.
                                 </p>
                             </div>
                         </div>
@@ -1783,25 +1749,18 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
+
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        Do you have plan to releasing Play Pro?
+                                        How long does it take for a deployment?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    Permute guarantees a 15-day delivery timeline starting from process definition till UAT initiation.
                                 </p>
                             </div>
                         </div>
@@ -1814,25 +1773,19 @@
                                 <div
                                     class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary-700 bg-opacity-5 text-primary-700"
                                 >
-                                    <svg width="17" height="10" viewBox="0 0 17 10" class="icon fill-current">
-                                        <path
-                                            d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                                            fill="#3056D3"
-                                            stroke="#3056D3"
-                                        />
-                                    </svg>
+                                <span class="icon material-icons">expand_more</span>
+
                                 </div>
                                 <div class="w-full">
                                     <h4 class="text-base font-semibold text-black sm:text-lg">
-                                        Where and how to host this template?
+                                        What is the pricing model?
                                     </h4>
                                 </div>
                             </button>
                             <div class="faq-content hidden pl-[62px]">
                                 <p class="py-3 text-base leading-relaxed text-body-color">
-                                    It takes 2-3 weeks to get your first blog post ready. That includes the in-depth
-                                    research & creation of your monthly content marketing strategy that we do before
-                                    writing your first blog post, Ipsum available .
+                                    Permute offers an affordable pay-per-use pricing model,
+                                    that is linked to the number of processes to be digitized. All plans include unlimited users.
                                 </p>
                             </div>
                         </div>
@@ -1856,9 +1809,9 @@
                             y2="-418.681"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop stop-color="#3056D3" stop-opacity="0.36" />
-                            <stop offset="1" stop-color="#F5F2FD" stop-opacity="0" />
-                            <stop offset="1" stop-color="#F5F2FD" stop-opacity="0.096144" />
+                            <stop stop-color="#fef2f2" stop-opacity="0.36" />
+                            <stop offset="1" stop-color="#fcc5c5" stop-opacity="0" />
+                            <stop offset="1" stop-color="#fc5656" stop-opacity="0.096144" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -1867,7 +1820,7 @@
         <!-- ====== Faq Section End -->
 
         <!-- ====== Testimonials Start ====== -->
-        <section id="testimonials" class="pt-20 md:pt-[120px]">
+        <!-- <section id="testimonials" class="pt-20 md:pt-[120px]">
             <div class="container px-4">
                 <div class="flex flex-wrap">
                     <div class="mx-4 w-full">
@@ -2067,12 +2020,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ====== Testimonials End ====== -->
 
         <!-- ====== Contact Start ====== -->
         <section id="contact" class="relative py-20 md:py-[120px]">
-            <div class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-[#f3f4fe] lg:h-[45%] xl:h-1/2"></div>
+            <div class="absolute top-1/2 left-0 z-[-1] h-1/2 w-full bg-primary-50 lg:h-[45%] xl:h-1/2"></div>
             <div class="container px-4">
                 <div class="-mx-4 flex flex-wrap items-center">
                     <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -2099,7 +2052,7 @@
                                     <div>
                                         <h5 class="mb-6 text-lg font-semibold">Our Location</h5>
                                         <p class="text-base text-body-color">
-                                            205 Iris Techpark, Sector 48,<br />Sohna Road, Gurugram, India
+                                            205, Iris Techpark, Sector 48,<br />Sohna Road, Gurugram, India
                                         </p>
                                     </div>
                                 </div>
@@ -2696,7 +2649,7 @@
 
         <script src="assets/js/main.js"></script>
         <script src="assets/js/typer.js"></script>
-
+        
         <!-- <script>
             // ==== for menu scroll
             const pageLink = document.querySelectorAll(".ud-menu-scroll");

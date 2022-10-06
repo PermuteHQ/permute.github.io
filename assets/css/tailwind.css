@@ -870,10 +870,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 330px;
 }
 
-.w-80{
-  width: 20rem;
-}
-
 .w-\[70px\]{
   width: 70px;
 }
@@ -1148,14 +1144,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f3f4ff\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 255 / var(--tw-bg-opacity));
-}
-
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(19 194 150 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f4ff\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F4F7FF\]{
@@ -1636,8 +1632,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .shadow-testimonial{
-  --tw-shadow: 0px 60px 120px -20px #EBEFFD;
-  --tw-shadow-colored: 0px 60px 120px -20px var(--tw-shadow-color);
+  --tw-shadow: 0px 0px 15px 0px #DDD;
+  --tw-shadow-colored: 0px 0px 15px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1650,6 +1646,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-\[top\]{
@@ -1926,6 +1926,10 @@ body {
 }
 
 @media (min-width: 540px){
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -2092,8 +2096,9 @@ body {
     font-size: 26px;
   }
 
-  .md\:text-\[45px\]{
-    font-size: 45px;
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-xl{
@@ -2103,11 +2108,6 @@ body {
 
   .md\:text-\[40px\]{
     font-size: 40px;
-  }
-
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .md\:leading-snug{
