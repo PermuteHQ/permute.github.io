@@ -98,4 +98,36 @@
     document.querySelector(".back-to-top").onclick = () => {
         scrollTo(document.documentElement);
     };
+
+    document.querySelector(".contact-form").onsubmit = (event) => {
+        handleContactUsSubmit();
+        event.preventDefault();
+        return false;
+    }
+
+    function handleContactUsSubmit() {
+        let name = document.getElementById("name-input").value;
+        let phone_number = document.getElementById("phone-number-input").value;
+        let email_address = document.getElementById("email-input").value;
+        let query = document.getElementById("query-input").value;
+        if (name !== "" && phone_number !== "" && email_address !== "" && query !== "") {
+            fetch("https://api.permutehq.com/contact-us/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: name,
+                    phone_number: phone_number,
+                    email_address: email_address,
+                    query: query,
+                }),
+            }).then((response) => {
+                alert("Thank you for your message. We will get back to you shortly");
+                document.querySelector(".contact-form").reset();
+            });
+        } else {
+            alert("Please enter all the form details.");
+        }
+    }
 })();

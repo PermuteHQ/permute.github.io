@@ -2079,12 +2079,13 @@
               "
                         >
                             <h3 class="mb-8 text-2xl font-semibold md:text-[26px]">Send us a Message</h3>
-                            <form>
+                            <form class="contact-form">
                                 <div class="mb-6">
                                     <label for="fullName" class="block text-xs text-dark">Full Name*</label>
                                     <input
                                         type="text"
                                         name="fullName"
+                                        id="name-input"
                                         placeholder="Adam Gelius"
                                         class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary-700 focus:outline-none"
                                     />
@@ -2094,6 +2095,7 @@
                                     <input
                                         type="email"
                                         name="email"
+                                        id="email-input"
                                         placeholder="example@yourmail.com"
                                         class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary-700 focus:outline-none"
                                     />
@@ -2103,6 +2105,7 @@
                                     <input
                                         type="text"
                                         name="phone"
+                                        id="phone-number-input"
                                         placeholder="+885 1254 5211 552"
                                         class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary-700 focus:outline-none"
                                     />
@@ -2112,6 +2115,7 @@
                                     <textarea
                                         name="message"
                                         rows="1"
+                                        id="query-input"
                                         placeholder="type your message here"
                                         class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary-700 focus:outline-none"
                                     ></textarea>
