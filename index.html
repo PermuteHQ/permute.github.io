@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Permute | Tailored-to-Fit solutions</title>
-        <link rel="shortcut icon" href="assets/images/logo/cube.png" type="image/x-icon" />
-        <link rel="stylesheet" href="assets/css/animate.css" />
-        <link rel="stylesheet" href="assets/css/tailwind.css" />
+        <link rel="shortcut icon" href="/assets/images/logo/cube.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/assets/css/animate.css" />
+        <link rel="stylesheet" href="/assets/css/tailwind.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-66XVKKY57R"></script>
@@ -21,7 +21,7 @@
         </script> -->
 
         <!-- ==== WOW JS ==== -->
-        <script src="assets/js/wow.min.js"></script>
+        <script src="/assets/js/wow.min.js"></script>
         <script>
             new WOW().init();
         </script>
@@ -30,50 +30,73 @@
                 font-family: "Gilroy-Bold";
                 font-style: normal;
                 font-weight: normal;
-                src: local("Gilroy-Bold"), url("assets/fonts/Gilroy-Bold.woff") format("woff");
+                src: local("Gilroy-Bold"), url("/assets/fonts/Gilroy-Bold.woff") format("woff");
             }
 
             @font-face {
                 font-family: "Gilroy-Heavy";
                 font-style: normal;
                 font-weight: normal;
-                src: local("Gilroy-Heavy"), url("assets/fonts/Gilroy-Heavy.woff") format("woff");
+                src: local("Gilroy-Heavy"), url("/assets/fonts/Gilroy-Heavy.woff") format("woff");
             }
 
             @font-face {
                 font-family: "Gilroy-Light";
                 font-style: normal;
                 font-weight: normal;
-                src: local("Gilroy-Light"), url("assets/fonts/Gilroy-Light.woff") format("woff");
+                src: local("Gilroy-Light"), url("/assets/fonts/Gilroy-Light.woff") format("woff");
             }
 
             @font-face {
                 font-family: "Gilroy-Medium";
                 font-style: normal;
                 font-weight: normal;
-                src: local("Gilroy-Medium"), url("assets/fonts/Gilroy-Medium.woff") format("woff");
+                src: local("Gilroy-Medium"), url("/assets/fonts/Gilroy-Medium.woff") format("woff");
             }
 
             @font-face {
                 font-family: "Gilroy-Regular";
                 font-style: normal;
                 font-weight: normal;
-                src: local("Gilroy-Regular"), url("assets/fonts/Gilroy-Regular.woff") format("woff");
+                src: local("Gilroy-Regular"), url("/assets/fonts/Gilroy-Regular.woff") format("woff");
             }
         </style>
+        <title>PermuteHQ</title>
+
+<meta name="description" content="The Ultimate Low Code Platform">
+<meta name="robots" content="index,follow">
+<meta name="author" content="undefined">
+
+<link rel="canonical" href="https://www.premutehq.com/">
+
+<meta property="og:title" content="PermuteHQ">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://www.premutehq.com/">
+<meta property="og:description" content="The Ultimate Low Code Platform">
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:url" content="https://www.premutehq.com/">
+<meta name="twitter:title" content="PermuteHQ">
+<meta name="twitter:description" content="The Ultimate Low Code Platform">
+
+
+
     </head>
     <body>
         <!-- ====== Navbar Section Start -->
         <div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
             <div class="container">
-                <div class="relative -mx-4 flex items-center justify-between">
-                    <div class="max-w-full px-4">
+                <div class="relative flex items-center justify-between">
+                    <div class="max-w-full py-2">
                         <a
                             class="toggleColour py-3 text-2xl tracking-wide text-gray-800 no-underline hover:no-underline lg:text-4xl"
-                            href="."
+                            href="/"
                             style="font-family: 'Gilroy-Heavy'"
                         >
-                            <img class="inline h-10" src="assets/images/logo/cube.png" title="Logo" />
+                            <img class="inline h-10" src="/assets/images/logo/cube.png" title="Logo" />
                             permute
                         </a>
                     </div>
@@ -149,7 +172,7 @@
                     <div class="flex items-center justify-between px-4">
                         <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
                             <a
-                                href="signup.html"
+                                href="/book-a-demo"
                                 class="signUpBtn rounded-lg border border-primary-700 bg-transparent py-2 px-6 text-base font-medium text-primary-700 duration-300 ease-in-out hover:bg-primary-700 hover:text-white"
                             >
                                 Book a Demo
@@ -161,6 +184,7 @@
         </div>
         <!-- ====== Navbar Section End -->
 
+        
         <!-- ====== Hero Section Start -->
         <div id="home" class="relative overflow-hidden bg-primary-50 pt-[120px] md:pt-[130px] lg:pt-[160px]">
             <div class="container">
@@ -2103,9 +2127,10 @@
                                 <div class="mb-6">
                                     <label for="phone" class="block text-xs text-dark">Phone*</label>
                                     <input
-                                        type="text"
+                                        type="number"
                                         name="phone"
                                         id="phone-number-input"
+                                        max="9999999999"
                                         placeholder="+885 1254 5211 552"
                                         class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary-700 focus:outline-none"
                                     />
@@ -2123,7 +2148,7 @@
                                 <div class="mb-0">
                                     <button
                                         type="submit"
-                                        class="inline-flex items-center justify-center rounded bg-primary-700 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
+                                        class="inline-flex items-center justify-center rounded bg-primary-700 py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary-800"
                                     >
                                         Send Message
                                     </button>
@@ -2136,6 +2161,9 @@
         </section>
         <!-- ====== Contact End ====== -->
 
+        <!-- ====== All Scripts -->
+        <script src="/assets/js/typer.js"></script>
+
         <!-- ====== Footer Section Start -->
         <footer class="wow fadeInUp relative z-10 bg-black pt-20 lg:pt-[120px]" data-wow-delay=".15s">
             <div class="container">
@@ -2147,7 +2175,7 @@
                                 href="."
                                 style="font-family: 'Gilroy-Heavy'"
                             >
-                                <img class="inline h-10" src="assets/images/logo/cube.png" />
+                                <img class="inline h-10" src="/assets/images/logo/cube.png" />
                                 permute
                             </a>
 
@@ -2320,7 +2348,7 @@
                                         target="_blank"
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
-                                        <img src="assets/images/footer/brands/tailgrids.svg" alt="tailgrids" />
+                                        <img src="/assets/images/footer/brands/tailgrids.svg" alt="tailgrids" />
                                     </a>
                                 </li>
                                 <li>
@@ -2330,7 +2358,7 @@
                                         target="_blank"
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
-                                        <img src="assets/images/footer/brands/ayroui.svg" alt="ayroui" />
+                                        <img src="/assets/images/footer/brands/ayroui.svg" alt="ayroui" />
                                     </a>
                                 </li>
                                 <li>
@@ -2341,7 +2369,7 @@
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
                                         <img
-                                            src="assets/images/footer/brands/ecommerce-html.svg"
+                                            src="/assets/images/footer/brands/ecommerce-html.svg"
                                             alt="ecommerce-html"
                                         />
                                     </a>
@@ -2353,7 +2381,7 @@
                                         target="_blank"
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
-                                        <img src="assets/images/footer/brands/graygrids.svg" alt="graygrids" />
+                                        <img src="/assets/images/footer/brands/graygrids.svg" alt="graygrids" />
                                     </a>
                                 </li>
                                 <li>
@@ -2363,7 +2391,7 @@
                                         target="_blank"
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
-                                        <img src="assets/images/footer/brands/lineicons.svg" alt="lineicons" />
+                                        <img src="/assets/images/footer/brands/lineicons.svg" alt="lineicons" />
                                     </a>
                                 </li>
                                 <li>
@@ -2373,7 +2401,7 @@
                                         target="_blank"
                                         class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                                     >
-                                        <img src="assets/images/footer/brands/uideck.svg" alt="uideck" />
+                                        <img src="/assets/images/footer/brands/uideck.svg" alt="uideck" />
                                     </a>
                                 </li>
                             </ul>
@@ -2384,7 +2412,7 @@
 
             <div>
                 <span class="absolute bottom-0 right-0 z-[-1]">
-                    <img src="assets/images/footer/shape-3.svg" alt="" />
+                    <img src="/assets/images/footer/shape-3.svg" alt="" />
                 </span>
 
                 <span class="absolute top-0 right-0 z-[-1]">
@@ -2649,11 +2677,8 @@
         </a>
         <!-- ====== Back To Top End -->
 
-        <!-- ====== All Scripts -->
+        <script src="/assets/js/main.js"></script>
 
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/typer.js"></script>
-        
         <!-- <script>
             // ==== for menu scroll
             const pageLink = document.querySelectorAll(".ud-menu-scroll");

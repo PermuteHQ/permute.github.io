@@ -106,10 +106,11 @@
     }
 
     function handleContactUsSubmit() {
-        let name = document.getElementById("name-input").value;
-        let phone_number = document.getElementById("phone-number-input").value;
-        let email_address = document.getElementById("email-input").value;
-        let query = document.getElementById("query-input").value;
+        let name = document.getElementById("name-input").value.trim();
+        let phone_number = document.getElementById("phone-number-input").value.trim();
+        let email_address = document.getElementById("email-input").value.trim();
+        let query = document.getElementById("query-input").value.trim();
+
         if (name !== "" && phone_number !== "" && email_address !== "" && query !== "") {
             fetch("https://api.permutehq.com/contact-us/", {
                 method: "POST",
