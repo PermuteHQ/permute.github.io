@@ -616,6 +616,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-\[6px\]{
   margin-top: 6px;
   margin-bottom: 6px;
@@ -629,11 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mx-3{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mb-4{

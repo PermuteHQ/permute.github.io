@@ -64,7 +64,7 @@
     });
 
     // ===== wow js
-    new WOW().init();
+    // new WOW().init();
 
     // ====== scroll top js
     function scrollTo(element, to = 0, duration = 500) {
