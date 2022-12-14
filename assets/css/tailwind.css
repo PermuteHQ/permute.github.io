@@ -985,6 +985,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(33 43 54 / var(--tw-bg-opacity));
 }
 
+.bg-amber-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.bg-amber-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
 }
@@ -1296,6 +1306,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#dddddd\]{
   --tw-text-opacity: 1;
   color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
+.text-primary-800{
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .underline{
