@@ -803,6 +803,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 330px;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-\[30px\]{
   width: 30px;
 }
@@ -1456,7 +1460,8 @@ body {
 } */
 
 .gradient {
-  background: linear-gradient(90deg, #991b1b 0%, #991b1b 30%, #d97706 100%);
+  /* background: linear-gradient(90deg, #991b1b 0%, #991b1b 30%, #d97706 100%); */
+   background: #c3332b;
 }
 
 .sticky{
@@ -1726,11 +1731,6 @@ body {
     padding-right: 2.5rem;
   }
 
-  .sm\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1739,6 +1739,11 @@ body {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-lg{
@@ -1766,6 +1771,10 @@ body {
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-48{
+    width: 12rem;
   }
 
   .md\:w-2\/3{
